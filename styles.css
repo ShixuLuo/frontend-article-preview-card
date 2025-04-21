@@ -1,0 +1,143 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --spacing-0: 0px;
+  --spacing-200: 16px;
+  --spacing-300: 24px;
+  --spacing-400: 32px;
+  --spacing-500: 40px;
+  --spacing-600: 48px;
+  --spacing-700: 56px;
+  --spacing-800: 64px;
+  --spacing-1300: 104px;
+  --spacing-2000: 160px;
+
+  --color-white: #FFFFFF;
+  --color-grey-900: #48556A;
+  --color-grey-500: #6E8098;
+  --color-grey-400: #9DAEC2;
+  --color-grey-200: #ECF2F8;
+}
+
+body {
+}
+
+main {
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--color-grey-200);
+}
+
+.card {
+  width: min-content;
+  height: min-content;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-400);
+
+  background-color: var(--color-white);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card img {
+  width: 327px;
+  height: 200px;
+
+}
+
+.card__body {
+  padding-bottom: var(--spacing-200);
+  width: min-content;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-600);
+}
+
+.card__body__content {
+  
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-300);
+}
+
+.card__body__footer {
+  
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-800);
+}
+
+.card__body__footer__author-info {
+
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-200);
+}
+
+.card__body__footer__author-info img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.card__body__footer__author-info__content {
+  width: max-content;
+  
+  display: flex;
+  flex-direction: column;
+}
+
+.card__body__footer__share {
+  width: 32px;
+  height: 32px;
+
+  border: 0px;
+  border-radius: 50%;
+  background-color: var(--color-grey-200);
+  background-image: url("images/icon-share.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 15px 13px;
+}
+
+/* fonts */
+h1 {
+  font-family: "Manrope";
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 130%;
+  letter-spacing: 0.25px;
+  color: var(--color-grey-900);
+}
+
+p {
+  font-family: "Manrope";
+  font-size: 13px;
+  font-weight: medium;
+  line-height: 140%;
+  letter-spacing: 0.12%;
+  color: var(--color-grey-500);
+}
+
+p.card__body__footer__author-info__content__author {
+  font-weight: bold;
+  color: var(--color-grey-900);
+}
+
+p.card__body__footer__author-info__content__date {
+  color: var(--color-grey-400);
+}
