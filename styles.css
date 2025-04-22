@@ -80,8 +80,8 @@ main {
 
 @media (min-width: 1440px) {
   .card img {
-    width: auto;
-    height: 310px;
+    width: 285px;
+    height: 290px;
     object-fit: cover;
     border-radius: 10px 0 0 10px;
   }
@@ -103,6 +103,7 @@ main {
     padding-right: var(--spacing-400);
     padding-top: var(--spacing-300);
     padding-bottom: var(--spacing-300);
+    gap: var(--spacing-300);
   }
 }
 
