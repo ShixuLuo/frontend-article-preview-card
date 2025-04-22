@@ -57,6 +57,12 @@ main {
   }
 }
 
+@media (min-width: 1440px) {
+  .card {
+    gap: var(--spacing-500);
+  }
+}
+
 .card img {
   width: 327px;
   height: 200px;
@@ -67,6 +73,15 @@ main {
   .card img {
     width: 229px;
     height: 346px;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .card img {
+    width: auto;
+    height: 310px;
     object-fit: cover;
     border-radius: 10px 0 0 10px;
   }
@@ -91,6 +106,14 @@ main {
   }
 }
 
+@media (min-width: 1440px) {
+  .card__body {
+    padding-right: var(--spacing-500);
+    padding-top: var(--spacing-400);
+    padding-bottom: var(--spacing-400);
+  }
+}
+
 .card__body__content {
   
   display: flex;
@@ -108,6 +131,12 @@ main {
 @media (min-width: 768px) {
   .card__body__footer {
     gap: var(--spacing-1300);
+  }
+}
+
+@media (min-width: 1440px) {
+  .card__body__footer {
+    gap: var(--spacing-2000);
   }
 }
 
